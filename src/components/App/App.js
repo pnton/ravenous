@@ -6,7 +6,6 @@ import SearchBar from '../SearchBar/SearchBar';
 
 import Yelp from '../../util/Yelp';
 
-// Renders a SearchBar component and a BusinessList component
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +17,6 @@ class App extends React.Component {
     this.searchYelp = this.searchYelp.bind(this);
   }
 
-  // Prints a message to the console, simulating a search
   searchYelp(term, location, sortBy) {
     Yelp.search(term, location, sortBy).then(businesses => {
       this.setState({businesses: businesses});

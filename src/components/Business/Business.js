@@ -1,7 +1,6 @@
 import React from 'react';
 import './Business.css';
 
-// Simulates a single business
 class Business extends React.Component {
   render() {
     return (
